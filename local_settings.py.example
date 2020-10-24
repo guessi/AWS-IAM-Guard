@@ -1,0 +1,20 @@
+# slack configurations
+webhook_url = 'https://hooks.slack.com/services/T12345678/0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+author_name = "IAM Security Scanner"
+footer = "IAM Security Scanner"
+footer_icon = "https://console.aws.amazon.com/iam/assets/images/favicon.png"
+text = "The following IAM User(s) have no MFA configured"
+thumb_url = "https://picsum.photos/200"
+
+# aws profile to scan
+aws_profiles = [
+    'myprofile1',
+    'myprofile1',
+]
+
+# exclude the following users
+excludes = [
+    'botuser',
+    'hiddenuser',
+    'superuser',
+]
